@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Student Dashboard</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="theme-toggle">
+    <input type="checkbox" id="themeSwitch">
+    <label for="themeSwitch" class="toggle-label">🌙</label>
+</div>
+
+<div class="page">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Morrhtech Academy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://morrhtechsolutions.com/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#coursesModal">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="end" data-bs-target="end">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container mt-3">
+        <div class="alert alert-success">Welcome back! Your dashboard is up-to-date.</div>
+    </div>
+
+    <header class="hero-section text-light text-center">
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Your personalized student portal</p>
+        <button class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#coursesModal">
+            View Courses
+        </button>
+    </header>
+
+        <section class="container my-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-3 text-center">
+                        <img src="https://via.placeholder.com/150" class="rounded-circle mx-auto mb-3" width="150">
+                        <h4>John Doe</h4>
+                        <p>Web Development Student</p>
+                        <p class="small">Passionate about creating modern web apps with responsive design.</p>
+                    </div>
+                </div>
+
+            <div class="col-md-8">
+                <h4>Enrolled Courses</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">HTML & CSS Fundamentals</li>
+                    <li class="list-group-item">Bootstrap 5 Mastery</li>
+                    <li class="list-group-item">Responsive Web Design</li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+   
+    <div class="container mb-5">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/900x300" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/900x300/aaaaaa" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/900x300/555555" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="animation">
+        <img src="" alt="">
+    </div>
+
+    <section class="container mb-5">
+        <h3 class="text-center mb-3">Contact Admin</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="p-4 shadow rounded bg-light">
+                    <div class="mb-3">
+                        <label>Full Name</label>
+                        <input placeholder="Write your name...." type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input placeholder="Enter your email....." type="email" class="form-control">
+                        
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Message</label>
+                        <textarea placeholder="Send your message......" class="form-control" rows="4"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="bg-dark text-light text-center py-3">
+        © 2025 Morrhtech Solutions | contact@morrhtech.com
+    </footer>
+
+</div>
+
+
+<div class="modal fade" id="coursesModal">
+    <div class="modal-dialog">
+        <div class="modal-content p-3">
+            <h4>Available Courses</h4>
+            <p>• Front-end Development<br>• UI/UX Design<br>• Full-Stack Engineering</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

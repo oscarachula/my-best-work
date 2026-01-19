@@ -1,0 +1,38 @@
+h2{
+    color: aqua;
+    background-color: blueviolet;
+    font-size: 70px;
+    font: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.oscar{
+    color: pink;
+    font-size: 50px;
+}
+#israel{
+    color: indigo;
+    font-size: 30px;
+}
+.latom{
+    color: green;
+    background-color: aqua;
+}
+.fire{
+    background-color: green !important
+    ;
+    font-weight: 900;
+}
+.grid{
+    grid-template-columns: repeat(2,1fr); 
+    display: grid;
+    gap: 10px;
+}
+.box {
+  background: lightblue;
+  padding: 20px;
+}
+body{
+    background-image: url(./school\ logo\ 3.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+}
